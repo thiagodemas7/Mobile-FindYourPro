@@ -1,0 +1,36 @@
+<ion-view>
+    <ion-header-bar class="bar-header bar-positive">
+        <div class="title uppercase">Página Principal</div>
+        <button class="button button-positive" ng-click="logout()">Sair</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="profile-container">
+                <!--<div id="em-profile" class="item">-->
+                    <!-- <img src="img/ionic.png"> -->
+                    <div ng-if="user.profilePic" class="profile-pic" ng-style="{'background-image': 'url(' + user.profilePic + ')'}"></div>
+                    <div ng-if="!user.profilePic" class="profile-pic" style="background-image: url(img/profile-pic-default.png)"></div>
+                    <div class="list card" ng-show="user" id="caixaBV">
+                      <h3 class="profile-user" style="text-align: center">Bem vindo, {{ user.name }}.</h3>
+                    </div>
+                <!--</div>-->
+                <div id="myDiv">
+                    <div id="color">
+                        <div id="effect"></div>
+                    </div>
+                </div>
+
+            </div>
+
+             <button id="botaoPP"ui-sref="listProfissionais" class="button button-full button-dark bold">Listar Profissionais</button>
+             <button id="botaoPP"ui-sref="mapa" class="button button-full button-dark bold">Mapa</button>
+             <button id="botaoPP"ui-sref="ranking" class="button button-full button-dark bold">Ranking de Profissionais</button>
+             
+
+
+        </div>
+    </ion-content>
+    <div id="footer" class="bar bar-footer">
+        <div class="title em-footer-title">© FindYourPro</div>
+    </div>
+</ion-view>

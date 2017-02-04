@@ -1,0 +1,30 @@
+<ion-view id="welcome-view">
+
+  <ion-header-bar>
+    <h1 class="title"> Cadastre-se já!</h1>
+    <div class="buttons">
+
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list" >
+    <label class="item item-input" style="margin-top:90px;">
+      <span class="input-label">Nome</span>
+      <input type="text" ng-model="cadastro.nome">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Email</span>
+      <input type="text" ng-model="cadastro.email">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Login</span>
+      <input type="text" ng-model="cadastro.login">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Senha</span>
+      <input type="password" ng-model="cadastro.senha">
+    </label>
+    </div>
+    <button class="button button-full button-positive">Cadastrar</button>
+  </ion-content>
+</ion-view>
