@@ -10,6 +10,12 @@ body {
     background-size: cover;
 }
 
+#map {
+        height: 600px;
+        margin: 0;
+        padding: 0;
+        
+      }
 
 .logo-welcome {
     width: 220px;
