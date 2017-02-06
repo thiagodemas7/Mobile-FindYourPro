@@ -1,6 +1,6 @@
 // App.js
 
-var oauthApp = angular.module('oauthApp', ['ngCookies', 'ionic', 'oauthApp.controllers']);
+var oauthApp = angular.module('oauthApp', ['ngCookies', 'ionic', 'oauthApp.controllers','oauthApp.services']);
 
 oauthApp.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -52,7 +52,7 @@ oauthApp.config(function ($stateProvider, $urlRouterProvider) {
             .state('mapa', {
                 url: "/mapa",
                 templateUrl: "partials/mapa.html",
-                controller: "MapCtrl"
+                controller: "dashboardCtrl"
             })
 
             .state('cadastro', {
